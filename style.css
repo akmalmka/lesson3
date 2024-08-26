@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 71px;
+    align-items: center;
+    padding: 0 38px 0 24px;
+}
+
+.Left_Nav {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.Left_Nav > button {
+    background-color: #FC004A;
+    color: white;
+    width: 256px;
+    height: 36px;
+    font-family: Inter;
+    font-size: 14.75px;
+    font-weight: 400;
+    line-height: 24px;
+    border: none;
+    outline: none;
+    border-radius: 12px;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px; 
+    cursor: pointer;
+}
+
+.Right_Nav > ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.Right_Nav > ul > li > a {
+    text-decoration: none;
+    color: black;
+    font-family: Inter;
+    font-size: 15.13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 63px;
+}
+
+.hero > img {
+    width: 97%;
+    border-radius: 15px;
+}
+
+main {
+    padding: 0 0 0 36px;
+}
+
+main > h1 {
+    font-family: Inter;
+    font-size: 32.48px;
+    font-weight: 400;
+    line-height: 40px;
+    margin: 65px 0 50px;    
+}
+
+.Card_Wrapper {
+    display: flex;
+    gap: 60px;
+    row-gap: 12px;
+    flex-wrap: wrap;
+}
+
+.Card {
+    height: 466px;
+    width: 310px;
+    box-shadow: 0px 4px 6px -4px #0000001A;
+    box-shadow: 0px 10px 15px -3px #0000001A;
+    border-radius: 15px;
+}
+
+.text {
+    padding: 16px 0 0 12px;
+}
+
+.text >h2 {
+    font-family: Inter;
+    font-size: 17.66px;
+    font-weight: 700;
+    line-height: 28px;    
+}
+
+.text > p {
+    font-family: Inter;
+    font-size: 18.28px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #FC004A; 
+    padding-top: 8px;   
+}
+
+.Card > img {
+    width: 100%;
+}
+
+.text > img {
+    padding: 24px 12px 0 245px;
+}
+
+
+footer {
+    padding: 81px 257px 51px 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.f-text > p {
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.Right_Nav > img {
+    display: none;
+}
+
+.hero > .phone {
+    display: none;
+}
+
+.Fot-hr {
+    display: none;
+}
+
+
+@media (max-width:830px) {
+    .hero > img {
+        width: 733px;
+        height: 231px;
+        border-radius: none;
+    }
+
+    .Right_Nav > ul > li >a {
+        font-family: Inter;
+        font-size: 15.13px;
+        font-weight: 400;
+        line-height: 24px;      
+    }
+
+    .Left_Nav >img {
+        display: none;
+    }
+
+    .Card {
+        width: 220px;
+        height: 345px;
+    }
+
+    .Card_Wrapper {
+        gap: 15px;
+    }
+
+    .text > h2 {
+        font-family: Inter;
+        font-size: 17.66px;
+        font-weight: 700;
+        line-height: 28px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .text > p {
+        margin: 0;
+        padding: 0;
+        font-family: Inter;
+        font-size: 18.28px;
+        font-weight: 500;
+        line-height: 28px;        
+    }
+
+
+    .text > img {
+        padding: 0 8.5px 6px 163px;
+    } 
+
+    footer {
+        padding: 58px 178px 61px 65px;
+    }
+}
+
+
+
+@media (max-width:490px) {
+    .Card_Wrapper {
+        gap: 5px;
+    }
+
+    main {
+        padding: 0 0 0 0 ;
+        margin: 150px 0 0 16px;
+    }
+
+    .navbar {
+        padding: 15px 16px;
+    }
+
+    .hero > .Desktop {
+        display: none;
+    }
+
+    .hero > .phone {
+        display: block;
+        width: 358px;
+        height: 205px;
+    }
+
+    .Right_Nav > ul {
+        display: none;
+    }
+
+    .Right_Nav > img {
+        display: block;
+    }
+
+    .Card {
+        width: 173px;
+        height: 313px;
+    }
+
+    .text > img {
+        padding: 12px 12px 12px 110px;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        padding: 25px 160px 53px 0px;
+        margin: 0;
+    }
+
+    .Fot-hr {
+        display: block;
+        margin-top: 28px;
+        color: gray;
+        background-color: gray;
+    }
+}
